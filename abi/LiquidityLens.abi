@@ -1,0 +1,133 @@
+[
+  {
+    "inputs":          [
+      {
+        "internalType": "contract Comptroller",
+        "name":         "comp",
+        "type":         "address"
+      },
+      {
+        "internalType": "address payable",
+        "name":         "account",
+        "type":         "address"
+      },
+      {
+        "internalType": "uint8",
+        "name":         "featureflags",
+        "type":         "uint8"
+      }
+    ],
+    "name":            "cTokenBalances",
+    "outputs":         [
+      {
+        "components":   [
+          {
+            "components":   [
+              {
+                "internalType": "address",
+                "name":         "cToken",
+                "type":         "address"
+              },
+              {
+                "internalType": "uint256",
+                "name":         "balanceOf",
+                "type":         "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name":         "borrowBalance",
+                "type":         "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name":         "balanceOfUnderlying",
+                "type":         "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name":         "collateralValue",
+                "type":         "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name":         "borrowValue",
+                "type":         "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name":         "collateralFactor",
+                "type":         "uint256"
+              }
+            ],
+            "internalType": "struct Lens.CTokenBalance[]",
+            "name":         "balances",
+            "type":         "tuple[]"
+          },
+          {
+            "internalType": "uint256",
+            "name":         "sumCollateral",
+            "type":         "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name":         "sumBorrow",
+            "type":         "uint256"
+          }
+        ],
+        "internalType": "struct Lens.CTokenBalances",
+        "name":         "",
+        "type":         "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type":            "function"
+  },
+  {
+    "inputs":          [
+      {
+        "internalType": "contract CToken",
+        "name":         "asset",
+        "type":         "address"
+      },
+      {
+        "internalType": "address",
+        "name":         "account",
+        "type":         "address"
+      }
+    ],
+    "name":            "getBorrowBalance",
+    "outputs":         [
+      {
+        "internalType": "uint256",
+        "name":         "",
+        "type":         "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type":            "function"
+  },
+  {
+    "inputs":          [
+      {
+        "internalType": "contract PriceOracle",
+        "name":         "oracle",
+        "type":         "address"
+      },
+      {
+        "internalType": "address",
+        "name":         "addr",
+        "type":         "address"
+      }
+    ],
+    "name":            "getPrice",
+    "outputs":         [
+      {
+        "internalType": "uint256",
+        "name":         "",
+        "type":         "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type":            "function"
+  }
+]

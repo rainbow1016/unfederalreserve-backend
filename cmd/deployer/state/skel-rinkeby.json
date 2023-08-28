@@ -1,0 +1,201 @@
+{
+  "Unitroller":        {
+    "LiquidationIncentiveMantissa": {
+      "Value": "1080000000000000000"
+    },
+    "CloseFactorMantissa":          {
+      "Value": "500000000000000000"
+    }
+  },
+  "InterestRateModel": {
+    "BaseRatePerYear":   "100000000000000000",
+    "MultiplierPerYear": "20000000000000000"
+  },
+  "EthToken":          {
+    "Name":                        "Ether",
+    "Symbol":                      "unETH",
+    "RewardSpeed":                 "10000000000000000000",
+    "CollateralFactor":            {
+      "Mantissa": "800000000000000000"
+    },
+    "Price":                       {
+      "Feed": "0x8A753747A1Fa494EC906cE90E9f37563A8AF630e"
+    },
+    "InitialExchangeRateMantissa": "200000000000000000000000000",
+    "Decimals":                    8
+  },
+  "Tokens":            [
+    {
+      "Name":                        "UnFederalReserveToken",
+      "Symbol":                      "uneRSDL",
+      "RewardSpeed":                 "40000000000000000000",
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000"
+      },
+      "Price":                       {
+        "StaticPrice": "720000000000000000"
+      },
+      "InitialExchangeRateMantissa": "200000000000000000000000000",
+      "Decimals":                    8,
+      "Underlying":                  {
+        "Contract":      {
+          "Address":    "0xe2BBB422caaCFcACc2Daa3Aee26b3f49591Db764",
+          "IsDeployed": true
+        },
+        "InitialAmount": "0",
+        "Name":          "UnFederalReserveToken",
+        "Symbol":        "eRSDL",
+        "Decimals":      18
+      }
+    },
+    {
+      "Name":                        "USD Coin",
+      "Symbol":                      "unUSDC",
+      "RewardSpeed":                 "20000000000000000000",
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000"
+      },
+      "Price":                       {
+        "Feed": "0xa24de01df22b63d23Ebc1882a5E3d4ec0d907bFB"
+      },
+      "InitialExchangeRateMantissa": "200000000000000",
+      "Decimals":                    8,
+      "Underlying":                  {
+        "Name":     "USD Coin",
+        "Symbol":   "USDC",
+        "Decimals": 6
+      }
+    },
+    {
+      "Name":                        "Dai",
+      "Symbol":                      "unDAI",
+      "RewardSpeed":                 "20000000000000000000",
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000"
+      },
+      "Price":                       {
+        "Feed": "0x2bA49Aaa16E6afD2a993473cfB70Fa8559B523cF"
+      },
+      "InitialExchangeRateMantissa": "200000000000000000000000000",
+      "Decimals":                    8,
+      "Underlying":                  {
+        "Name":     "Dai",
+        "Symbol":   "DAI",
+        "Decimals": 18
+      }
+    },
+    {
+      "Name":                        "Tether USD",
+      "Symbol":                      "unUSDT",
+      "RewardSpeed":                 "20000000000000000000",
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000"
+      },
+      "Price":                       {
+        "StaticPrice": "1000000000000000019884624838656"
+      },
+      "InitialExchangeRateMantissa": "200000000000000",
+      "Decimals":                    8,
+      "Underlying":                  {
+        "Name":     "Tether USD",
+        "Symbol":   "USDT",
+        "Decimals": 6
+      }
+    },
+    {
+      "Name":                        "yearn.finance",
+      "Symbol":                      "unYFI",
+      "RewardSpeed":                 "0",
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000"
+      },
+      "Price":                       {
+        "StaticPrice": "34000000000000000000000"
+      },
+      "InitialExchangeRateMantissa": "200000000000000000000000000",
+      "Decimals":                    8,
+      "Underlying":                  {
+        "Name":     "yearn.finance",
+        "Symbol":   "YFI",
+        "Decimals": 18
+      }
+    },
+    {
+      "Name":                        "Wrapped BTC",
+      "Symbol":                      "unWBTC",
+      "RewardSpeed":                 "10000000000000000000",
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000"
+      },
+      "Price":                       {
+        "Feed": "0xECe365B379E1dD183B20fc5f022230C044d51404"
+      },
+      "InitialExchangeRateMantissa": "20000000000000000",
+      "Decimals":                    8,
+      "Underlying":                  {
+        "Name":     "Wrapped BTC",
+        "Symbol":   "WBTC",
+        "Decimals": 8
+      }
+    },
+    {
+      "Name":                        "Aave Token",
+      "Symbol":                      "unAAVE",
+      "RewardSpeed":                 "0",
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000"
+      },
+      "Price":                       {
+        "StaticPrice": "389000000000000000000"
+      },
+      "InitialExchangeRateMantissa": "200000000000000000000000000",
+      "Decimals":                    8,
+      "Underlying":                  {
+        "Name":     "Aave Token",
+        "Symbol":   "AAVE",
+        "Decimals": 18
+      }
+    },
+    {
+      "Name":                        "SushiToken",
+      "Symbol":                      "unSUSHI",
+      "RewardSpeed":                 "0",
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000"
+      },
+      "Price":                       {
+        "StaticPrice": "16000000000000000000"
+      },
+      "InitialExchangeRateMantissa": "200000000000000000000000000",
+      "Decimals":                    8,
+      "Underlying":                  {
+        "Name":     "SushiToken",
+        "Symbol":   "SUSHI",
+        "Decimals": 18
+      }
+    },
+    {
+      "Name":                        "ChainLink Token",
+      "Symbol":                      "unLINK",
+      "RewardSpeed":                 "10000000000000000000",
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000"
+      },
+      "Price":                       {
+        "Feed": "0xd8bD0a1cB028a31AA859A21A3758685a95dE4623"
+      },
+      "InitialExchangeRateMantissa": "200000000000000000000000000",
+      "Decimals":                    8,
+      "Underlying":                  {
+        "Name":     "ChainLink Token",
+        "Symbol":   "LINK",
+        "Decimals": 18
+      }
+    }
+  ],
+  "RewardToken":       {
+    "Contract": {
+      "Address": "0xe2BBB422caaCFcACc2Daa3Aee26b3f49591Db764"
+    }
+  }
+}

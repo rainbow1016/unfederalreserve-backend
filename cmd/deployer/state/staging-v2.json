@@ -1,0 +1,520 @@
+{
+  "Unitroller":        {
+    "Contract":                     {
+      "IsDeployed": true,
+      "Address":    "0x486d3895fccf52653a2622840ccd93e4b52b590c"
+    },
+    "LiquidationIncentiveMantissa": {
+      "Value": "1080000000000000000",
+      "IsSet": true
+    },
+    "CloseFactorMantissa":          {
+      "Value": "500000000000000000",
+      "IsSet": true
+    }
+  },
+  "Comptroller":       {
+    "Contract": {
+      "IsDeployed": true,
+      "Address":    "0xaa2503e93c576dd7e2337ec61e58863f33892e72"
+    },
+    "IsSet":    true
+  },
+  "Oracle":            {
+    "Contract": {
+      "IsDeployed": true,
+      "Address":    "0xa4d4e7fb6708c5563bb359c2926ee5bf08057a81"
+    },
+    "IsSet":    true
+  },
+  "Timelock":          {
+    "Contract": {
+      "IsDeployed": true,
+      "Address":    "0x1334b1f81ede05026c487a3e908b91d19ccc3dcd"
+    },
+    "Delay":    "3600"
+  },
+  "InterestRateModel": {
+    "Contract":          {
+      "IsDeployed": true,
+      "Address":    "0x8b0008f766bbcb16bb7632f0d0e7fb4a7b83c538"
+    },
+    "BaseRatePerYear":   "100000000000000000",
+    "MultiplierPerYear": "20000000000000000"
+  },
+  "JumpRateModelV2":   {
+    "Contract":              {
+      "IsDeployed": true,
+      "Address":    "0x2ca534c70cc0c9118ade46b9820a67174cbadf57"
+    },
+    "BaseRatePerYear":       "20000000000000000",
+    "MultiplierPerYear":     "300000000000000000",
+    "JumpMultiplierPerYear": "1200000000000000000",
+    "Kink":                  "800000000000000000",
+    "Admin":                 "0x0000000000000000000000000000000000000000"
+  },
+  "Tokens":            [
+    {
+      "Delegator":                   {
+        "IsDeployed": true,
+        "Address":    "0x963637fb8b13d03a34823afa65dc84e743baf478"
+      },
+      "Delegate":                    {
+        "Contract": {
+          "IsDeployed": true,
+          "Address":    "0xdb507d019905f30f3928d21f68f7466739f32c83"
+        },
+        "IsSet":    true
+      },
+      "IsSetSupportedMarket":        true,
+      "CollateralFactor":            {
+        "Mantissa": "400000000000000000",
+        "IsSet":    true
+      },
+      "Price":                       {
+        "Feed":        "0x0000000000000000000000000000000000000000",
+        "StaticPrice": "720000000000000000",
+        "IsSet":       true
+      },
+      "InterestRateModel":           "0x0000000000000000000000000000000000000000",
+      "InterestRateModelType":       "",
+      "InitialExchangeRateMantissa": "200000000000000000000000000",
+      "Name":                        "UnFederalReserveToken",
+      "Symbol":                      "uneRSDL",
+      "Decimals":                    8,
+      "Admin":                       "0x0000000000000000000000000000000000000000",
+      "Underlying":                  {
+        "Contract":      {
+          "IsDeployed": true,
+          "Address":    "0xe2bbb422caacfcacc2daa3aee26b3f49591db764"
+        },
+        "InitialAmount": "0",
+        "Name":          "UnFederalReserveToken",
+        "Symbol":        "eRSDL",
+        "Decimals":      18,
+        "Admin":         ""
+      },
+      "RewardSpeed":                 "0",
+      "IsSetRewardSpeed":            true
+    },
+    {
+      "Delegator":                   {
+        "IsDeployed": true,
+        "Address":    "0x3c23f90a096e0969be4d10df688b1e73a7e6be47"
+      },
+      "Delegate":                    {
+        "Contract": {
+          "IsDeployed": true,
+          "Address":    "0x4ad03177f8bef09f1922d21db09f20a1888b30b3"
+        },
+        "IsSet":    true
+      },
+      "IsSetSupportedMarket":        true,
+      "CollateralFactor":            {
+        "Mantissa": "",
+        "IsSet":    true
+      },
+      "Price":                       {
+        "Feed":        "0x0000000000000000000000000000000000000000",
+        "StaticPrice": "1420000000000000000",
+        "IsSet":       true
+      },
+      "InterestRateModel":           "0x8b0008f766bbcb16bb7632f0d0e7fb4a7b83c538",
+      "InterestRateModelType":       "",
+      "InitialExchangeRateMantissa": "200000000000000000000000000",
+      "Name":                        "unFederal MATIC",
+      "Symbol":                      "unMATIC",
+      "Decimals":                    8,
+      "Admin":                       "0x0000000000000000000000000000000000000000",
+      "Underlying":                  {
+        "Contract":      {
+          "IsDeployed": true,
+          "Address":    "0xcd678e76d7792a8ea17108035d78ded271faa546"
+        },
+        "InitialAmount": "",
+        "Name":          "MATIC",
+        "Symbol":        "MATIC",
+        "Decimals":      18,
+        "Admin":         ""
+      },
+      "RewardSpeed":                 "",
+      "IsSetRewardSpeed":            true
+    },
+    {
+      "Delegator":                   {
+        "IsDeployed": true,
+        "Address":    "0x5c4e3496eb80df5d2489d6a9d98bd244f1c09e33"
+      },
+      "Delegate":                    {
+        "Contract": {
+          "IsDeployed": true,
+          "Address":    "0x84cbb669cb1eff9ae3a87ffad261c9d61e2a433b"
+        },
+        "IsSet":    true
+      },
+      "IsSetSupportedMarket":        true,
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000",
+        "IsSet":    true
+      },
+      "Price":                       {
+        "Feed":        "0xa24de01df22b63d23ebc1882a5e3d4ec0d907bfb",
+        "StaticPrice": "",
+        "IsSet":       true
+      },
+      "InterestRateModel":           "0x0000000000000000000000000000000000000000",
+      "InterestRateModelType":       "",
+      "InitialExchangeRateMantissa": "200000000000000",
+      "Name":                        "USD Coin",
+      "Symbol":                      "unUSDC",
+      "Decimals":                    8,
+      "Admin":                       "0x0000000000000000000000000000000000000000",
+      "Underlying":                  {
+        "Contract":      {
+          "IsDeployed": true,
+          "Address":    "0x7ba433d48c43e3ceeb2300bfbf21db58eecdcd1a"
+        },
+        "InitialAmount": "",
+        "Name":          "USD Coin",
+        "Symbol":        "USDC",
+        "Decimals":      6,
+        "Admin":         ""
+      },
+      "RewardSpeed":                 "20000000000000000000",
+      "IsSetRewardSpeed":            true
+    },
+    {
+      "Delegator":                   {
+        "IsDeployed": true,
+        "Address":    "0xf8b229980069ec58f31dfe975301965ff170b025"
+      },
+      "Delegate":                    {
+        "Contract": {
+          "IsDeployed": true,
+          "Address":    "0x0887a520ce10f22de703b08a22b348286f5e47d7"
+        },
+        "IsSet":    true
+      },
+      "IsSetSupportedMarket":        true,
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000",
+        "IsSet":    true
+      },
+      "Price":                       {
+        "Feed":        "0x2ba49aaa16e6afd2a993473cfb70fa8559b523cf",
+        "StaticPrice": "",
+        "IsSet":       true
+      },
+      "InterestRateModel":           "0x0000000000000000000000000000000000000000",
+      "InterestRateModelType":       "",
+      "InitialExchangeRateMantissa": "200000000000000000000000000",
+      "Name":                        "Dai",
+      "Symbol":                      "unDAI",
+      "Decimals":                    8,
+      "Admin":                       "0x0000000000000000000000000000000000000000",
+      "Underlying":                  {
+        "Contract":      {
+          "IsDeployed": true,
+          "Address":    "0x86ea84e287943aa830482684887f603771ebb616"
+        },
+        "InitialAmount": "",
+        "Name":          "Dai",
+        "Symbol":        "DAI",
+        "Decimals":      18,
+        "Admin":         ""
+      },
+      "RewardSpeed":                 "20000000000000000000",
+      "IsSetRewardSpeed":            true
+    },
+    {
+      "Delegator":                   {
+        "IsDeployed": true,
+        "Address":    "0x2a58bfb1d674d57cde60785cea263ae7aa7456c7"
+      },
+      "Delegate":                    {
+        "Contract": {
+          "IsDeployed": true,
+          "Address":    "0xa46fbe1c4b774217da6553c0a563434046156351"
+        },
+        "IsSet":    true
+      },
+      "IsSetSupportedMarket":        true,
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000",
+        "IsSet":    true
+      },
+      "Price":                       {
+        "Feed":        "0x0000000000000000000000000000000000000000",
+        "StaticPrice": "1000000000000000019884624838656",
+        "IsSet":       true
+      },
+      "InterestRateModel":           "0x0000000000000000000000000000000000000000",
+      "InterestRateModelType":       "",
+      "InitialExchangeRateMantissa": "200000000000000",
+      "Name":                        "Tether USD",
+      "Symbol":                      "unUSDT",
+      "Decimals":                    8,
+      "Admin":                       "0x0000000000000000000000000000000000000000",
+      "Underlying":                  {
+        "Contract":      {
+          "IsDeployed": true,
+          "Address":    "0x2089104a61a40c36b84b0805ef746ec07de93661"
+        },
+        "InitialAmount": "",
+        "Name":          "Tether USD",
+        "Symbol":        "USDT",
+        "Decimals":      6,
+        "Admin":         ""
+      },
+      "RewardSpeed":                 "20000000000000000000",
+      "IsSetRewardSpeed":            true
+    },
+    {
+      "Delegator":                   {
+        "IsDeployed": true,
+        "Address":    "0xe44e2a4d80ed67be74ede578615322968bf3d733"
+      },
+      "Delegate":                    {
+        "Contract": {
+          "IsDeployed": true,
+          "Address":    "0x3c729903a5f0fa873c9a1ed75ef9f5454740508d"
+        },
+        "IsSet":    true
+      },
+      "IsSetSupportedMarket":        true,
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000",
+        "IsSet":    true
+      },
+      "Price":                       {
+        "Feed":        "0x0000000000000000000000000000000000000000",
+        "StaticPrice": "34000000000000000000000",
+        "IsSet":       true
+      },
+      "InterestRateModel":           "0x0000000000000000000000000000000000000000",
+      "InterestRateModelType":       "",
+      "InitialExchangeRateMantissa": "200000000000000000000000000",
+      "Name":                        "yearn.finance",
+      "Symbol":                      "unYFI",
+      "Decimals":                    8,
+      "Admin":                       "0x0000000000000000000000000000000000000000",
+      "Underlying":                  {
+        "Contract":      {
+          "IsDeployed": true,
+          "Address":    "0x0868da4d0bae23b647772035db267ce38e0fb811"
+        },
+        "InitialAmount": "",
+        "Name":          "yearn.finance",
+        "Symbol":        "YFI",
+        "Decimals":      18,
+        "Admin":         ""
+      },
+      "RewardSpeed":                 "0",
+      "IsSetRewardSpeed":            true
+    },
+    {
+      "Delegator":                   {
+        "IsDeployed": true,
+        "Address":    "0xfde9ffca5c5a9af19c9476c5df0d5f269253a326"
+      },
+      "Delegate":                    {
+        "Contract": {
+          "IsDeployed": true,
+          "Address":    "0xa356ddccff2b127c545b9259c85cd5a6644c4b8a"
+        },
+        "IsSet":    true
+      },
+      "IsSetSupportedMarket":        true,
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000",
+        "IsSet":    true
+      },
+      "Price":                       {
+        "Feed":        "0xece365b379e1dd183b20fc5f022230c044d51404",
+        "StaticPrice": "",
+        "IsSet":       true
+      },
+      "InterestRateModel":           "0x0000000000000000000000000000000000000000",
+      "InterestRateModelType":       "",
+      "InitialExchangeRateMantissa": "20000000000000000",
+      "Name":                        "Wrapped BTC",
+      "Symbol":                      "unWBTC",
+      "Decimals":                    8,
+      "Admin":                       "0x0000000000000000000000000000000000000000",
+      "Underlying":                  {
+        "Contract":      {
+          "IsDeployed": true,
+          "Address":    "0x10e07d56fecd74aa88c93d5259f1caa58d284757"
+        },
+        "InitialAmount": "",
+        "Name":          "Wrapped BTC",
+        "Symbol":        "WBTC",
+        "Decimals":      8,
+        "Admin":         ""
+      },
+      "RewardSpeed":                 "10000000000000000000",
+      "IsSetRewardSpeed":            true
+    },
+    {
+      "Delegator":                   {
+        "IsDeployed": true,
+        "Address":    "0x372d2cdce0b8925570b63fa372423e374be100e3"
+      },
+      "Delegate":                    {
+        "Contract": {
+          "IsDeployed": true,
+          "Address":    "0x362df73098461895d72fb0662a16e97eec88c18e"
+        },
+        "IsSet":    true
+      },
+      "IsSetSupportedMarket":        true,
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000",
+        "IsSet":    true
+      },
+      "Price":                       {
+        "Feed":        "0x0000000000000000000000000000000000000000",
+        "StaticPrice": "389000000000000000000",
+        "IsSet":       true
+      },
+      "InterestRateModel":           "0x0000000000000000000000000000000000000000",
+      "InterestRateModelType":       "",
+      "InitialExchangeRateMantissa": "200000000000000000000000000",
+      "Name":                        "Aave Token",
+      "Symbol":                      "unAAVE",
+      "Decimals":                    8,
+      "Admin":                       "0x0000000000000000000000000000000000000000",
+      "Underlying":                  {
+        "Contract":      {
+          "IsDeployed": true,
+          "Address":    "0x42447d5f59d5bf78a82c34663474922bdf278162"
+        },
+        "InitialAmount": "",
+        "Name":          "Aave Token",
+        "Symbol":        "AAVE",
+        "Decimals":      18,
+        "Admin":         ""
+      },
+      "RewardSpeed":                 "0",
+      "IsSetRewardSpeed":            true
+    },
+    {
+      "Delegator":                   {
+        "IsDeployed": true,
+        "Address":    "0x1e5253d76fe1e810cb9967a99189cf05d9717161"
+      },
+      "Delegate":                    {
+        "Contract": {
+          "IsDeployed": true,
+          "Address":    "0x14e7ab6d5898ebf8bbac29210a5b1fb7532dd100"
+        },
+        "IsSet":    true
+      },
+      "IsSetSupportedMarket":        true,
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000",
+        "IsSet":    true
+      },
+      "Price":                       {
+        "Feed":        "0x0000000000000000000000000000000000000000",
+        "StaticPrice": "16000000000000000000",
+        "IsSet":       true
+      },
+      "InterestRateModel":           "0x0000000000000000000000000000000000000000",
+      "InterestRateModelType":       "",
+      "InitialExchangeRateMantissa": "200000000000000000000000000",
+      "Name":                        "SushiToken",
+      "Symbol":                      "unSUSHI",
+      "Decimals":                    8,
+      "Admin":                       "0x0000000000000000000000000000000000000000",
+      "Underlying":                  {
+        "Contract":      {
+          "IsDeployed": true,
+          "Address":    "0x6191b3c78cdd869bf8d50090a489843f7b991895"
+        },
+        "InitialAmount": "",
+        "Name":          "SushiToken",
+        "Symbol":        "SUSHI",
+        "Decimals":      18,
+        "Admin":         ""
+      },
+      "RewardSpeed":                 "0",
+      "IsSetRewardSpeed":            true
+    },
+    {
+      "Delegator":                   {
+        "IsDeployed": true,
+        "Address":    "0xb72338535baec3255e8d45ba458883de9129dfeb"
+      },
+      "Delegate":                    {
+        "Contract": {
+          "IsDeployed": true,
+          "Address":    "0x2a9804cdeaa88735a36f318a4a937ab81c2519e8"
+        },
+        "IsSet":    true
+      },
+      "IsSetSupportedMarket":        true,
+      "CollateralFactor":            {
+        "Mantissa": "800000000000000000",
+        "IsSet":    true
+      },
+      "Price":                       {
+        "Feed":        "0xd8bd0a1cb028a31aa859a21a3758685a95de4623",
+        "StaticPrice": "",
+        "IsSet":       true
+      },
+      "InterestRateModel":           "0x0000000000000000000000000000000000000000",
+      "InterestRateModelType":       "",
+      "InitialExchangeRateMantissa": "200000000000000000000000000",
+      "Name":                        "ChainLink Token",
+      "Symbol":                      "unLINK",
+      "Decimals":                    8,
+      "Admin":                       "0x0000000000000000000000000000000000000000",
+      "Underlying":                  {
+        "Contract":      {
+          "IsDeployed": true,
+          "Address":    "0x5b8e37fe17413a8ca7886607a2d19fc22edb6e1e"
+        },
+        "InitialAmount": "",
+        "Name":          "ChainLink Token",
+        "Symbol":        "LINK",
+        "Decimals":      18,
+        "Admin":         ""
+      },
+      "RewardSpeed":                 "10000000000000000000",
+      "IsSetRewardSpeed":            true
+    }
+  ],
+  "EthToken":          {
+    "Contract":                    {
+      "IsDeployed": true,
+      "Address":    "0x066c1a2121d8b5fa0667b7ddd1ad6857e0340fb3"
+    },
+    "IsSetSupportedMarket":        true,
+    "CollateralFactor":            {
+      "Mantissa": "800000000000000000",
+      "IsSet":    true
+    },
+    "Price":                       {
+      "Feed":        "0x8a753747a1fa494ec906ce90e9f37563a8af630e",
+      "StaticPrice": "",
+      "IsSet":       true
+    },
+    "InterestRateModel":           "0x0000000000000000000000000000000000000000",
+    "InterestRateModelType":       "",
+    "InitialExchangeRateMantissa": "200000000000000000000000000",
+    "Name":                        "Ether",
+    "Symbol":                      "unETH",
+    "Decimals":                    8,
+    "Admin":                       "0x0000000000000000000000000000000000000000",
+    "RewardSpeed":                 "10000000000000000000",
+    "IsSetRewardSpeed":            true
+  },
+  "RewardToken":       {
+    "Contract": {
+      "IsDeployed": false,
+      "Address":    "0xe2bbb422caacfcacc2daa3aee26b3f49591db764"
+    },
+    "IsSet":    true
+  }
+}
